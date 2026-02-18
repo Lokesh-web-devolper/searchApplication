@@ -39,7 +39,6 @@ function fetchData(event)
     {
         spinner.classList.toggle("d-none");
         searchContainer.textContent = "";
-        searchContainer.appendChild(spinner);
         let searchValue = searchElement.value;
         let url="https://apis.ccbp.in/wiki-search?search=" + searchValue;
         fetch(url,options)
